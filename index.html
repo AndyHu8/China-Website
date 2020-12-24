@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China - Dokumentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="Picture/china.png">
+</head>
+<style>
+
+    body {padding: 0; margin: 0;}
+    /*Navbar*/
+    #navbar {position: fixed; width: 100%;}
+    #item:hover {color:#e00000; transition: 0.5s;}
+    #item2:hover {color:gold; transition: 0.5s;}
+
+    /*China*/
+    #allgemein {background-image: url(Picture/china2.jpg); background-repeat: no-repeat;
+    background-size: 1900px 900px; height: 800px; background-attachment: fixed; background-position: center;}
+    #start {padding-top: 30%;}
+    #start h3 {font-size: 300%; color: #e00000; text-shadow: 1px 1px black;}
+    #untertitel {font-size: 150%; color: gold; text-shadow: 1px 1px black;}
+    #text {font-size: 100%; color: white; text-shadow: 1px 1px black;}
+
+    /*FlaggeWappen*/
+    #flaggewappen {background-color: white; height: auto;}
+    #h3FW {margin-top: 3%; text-decoration: underline;}
+    #flagge {float:left; width:300px; margin-left: 5%; margin-right: 5%;}
+    #wappen {float:right; width:300px; margin-left: 5%; margin-right: 5%;}
+    #flaggewappen p {margin-top: 5%; border: 1px 1px solid black; background-color:#edebeb;}
+
+    /*Fakten*/
+    #fakten {background-color: #fafafa; height: auto;}
+    #fakten thead {background-color: #e00000; color: white}
+
+    /*Geschichte*/
+    #geschichte {background-image: url(Picture/kaiserzeit.png);
+    background-repeat:no-repeat; background-size: 1800px 900px; background-position: center;
+    background-attachment: fixed; height: auto;}
+    #text_geschichte, #h3FW_Gesch {margin-top: 2%; color: white; text-shadow: 1px 1px black; margin-bottom: 2%;}
+    #h3FW_Gesch {text-decoration: underline;}
+    #text_geschichte {margin-bottom: 5%;}
+
+    /*Zukunft*/
+   #zukunft {height: auto;}
+   #zukunft img {margin-left: 15%; width:40%; float: left; margin-right: 2%; margin-bottom: 5%;}
+   #zukunft p {padding-right: 10%; font-size: 130%;}
+
+   /*Footer*/
+   footer img {width: 1.5%; margin-left: 48%;}
+
+   /*Footer*/
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 12px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    vertical-align: middle;
+  }
+
+  #favicon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 12px;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #121212;
+  vertical-align: middle;
+}
+
+#freepik_link:hover {color: deepskyblue; transition: 0.5s;}
+#flaticon_link:hover {color: deepskyblue; transition: 0.5s;}
+
+@media only screen and (max-width: 1000px) { #navbar {display: none;}}
+
+@media only screen and (max-width: 778px) {
+
+/*ALLGEMEIN*/
+#allgemein h3 {font-size: 150%; padding-top:50%;}
+#allgemein p {font-size: 80%;}
+
+/*FLAGGEWAPPEN*/
+#flaggewappen h3 {font-size: 100%;}
+#flaggewappen p {font-size: 80%;}
+#flaggewappen img {width: 25%;}
+
+/*FAKTEN*/
+#fakten h3 {font-size: 100%;}
+#fakten th, #fakten td {font-size: 80%;}
+
+/*GESCHICHTE*/
+#geschichte h3 {font-size: 100%;}
+#geschichte p {font-size: 80%;}
+
+/*ZUKUNFT*/
+#zukunft h3 {font-size: 100%;}
+#zukunft p {font-size: 80%; padding-right: 0%;}
+#zukunft img {margin-left: 0%;}
+
+/*FOOTER*/
+#favicon p {font-size: 80%;}
+footer p {font-size: 80%;}
+}
+</style>
+
+<body>
+    <!--Navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#navbar">Navigation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a id="item" class="nav-link active" href="#allgemein">China <span class="sr-only">(current)</span></a>
+            <a id="item2" class="nav-link" href="#flaggewappen">Flagge & Wappen</a>
+            <a id="item" class="nav-link" href="#fakten">Fakten</a>
+            <a id="item2" class="nav-link" href="#geschichte">Geschichte</a>
+            <a id="item" class="nav-link" href="#zukunft">Zukunft</a>
+            <a id="item2" class="nav-link" href="#allgemein">/Meine Heimat</a>
+          </div>
+        </div>
+      </nav>
+<!--China-->
+    <section id="allgemein" style="width:100%; padding-left: 5%; padding-right:5%; margin: auto;">
+        <div id="start">
+            <h3>China</h3>
+        <p id="untertitel"><i>Das Land der Mitte.</i></p>
+        <p id="text">Die Volksrepublik China, allgemein als China bezeichnet, ist ein sozialistischer Staat in Ostasien. Mit rund 1,4 Milliarden Einwohnern stellt China das bevölkerungsreichste und gemessen an seiner Gesamtfläche das viertgrößte Land der Erde dar.
+            Gemäß ihrer Verfassung steht die Volksrepublik China „unter der demokratischen Diktatur des Volkes“, wird jedoch von Beginn an durchgehend allein von der Kommunistischen Partei Chinas (KPCh) autoritär bis totalitär regiert.
+            Die Volksrepublik wurde am 1. Oktober 1949 nach dem Sturz der Republik China im chinesischen Bürgerkrieg von Mao Zedong ausgerufen.</p>
+        </div>
+    </section>
+
+<!--FlaggeWappen-->
+    <section id="flaggewappen" style="width:100%; padding-left: 5%; padding-right:5%; margin: auto;">
+        <div>
+            <h3 id="h3FW"><i>Flagge & Wappen</i></h3>
+            <p><img id="flagge" src="Picture/ChinaFlagge.svg" alt="Flagge China">Grundfarbe ist das kommunistische Rot, zugleich auch die Farbe der Han-Chinesen. Zudem gilt es in China als Glücksfarbe. Im linken oberen Eck ist ein großer fünfzackiger gelber Stern, der bogenförmig von vier kleineren Sternen umrahmt wird. 
+                Der große Stern symbolisiert die Führung der kommunistischen Partei, die kleineren Sterne stehen für die vier Klassen:
+                    1.  Arbeiter,
+                    2.  Bauern,
+                    3.  Kleinbürger,
+                    4.  Unternehmer, die sich seit dem Krieg gegen Japan in den 30er und 40er Jahren auf die Seite der Kommunisten gestellt hatten.
+                Diese vier Begriffe kennzeichnete Mao Zedong in einer Rede aus dem Jahr 1949 als die vier Gruppierungen, aus denen sich das chinesische Volk zusammensetze.
+                Zudem hat die Zahl fünf auch eine traditionelle Bedeutung. Traditionell spricht man von fünf Herrschern, fünf Farben, fünf Elementen, fünf Tugenden, fünf Sorten und historisch von fünf Teilen Chinas.</p>
+              
+            <p><img id="wappen" src="Picture/ChinaWappen.png" alt="Wappen China">Das Tor des Himmlischen Friedens ist der südliche Zugang zur Verbotenen Stadt, von dessen Balustrade aus Mao Zedong am 1. Oktober 1949 die Volksrepublik China ausrief.
+                Der große Stern symbolisiert die Kommunistische Partei, die vier kleineren Sterne symbolisieren die „vier Klassen“ –Arbeiter, Bauernstand, Intellektuelle und die nationale Bourgeoisie – auf die sich die politische Macht der Volksrepublik China stützen soll. Die Anordnung der Sterne um den großen Stern, der die Mitte bildet, zeigt, dass sich die Einheit durch ein Zentrum bilden soll.
+                Es gibt unterschiedliche Deutungen, wofür die vier Sterne stehen. So stehen laut „Fischer Weltalmanach 2006“ die vier kleinen Sterne für Arbeiter, Bauern, Kleinbürger und patriotische Kapitalisten. Die Originalbeschreibung des Gestalters der Flagge Zeng Liansong sieht hingegen die allgemeine Bourgeoisiedurch den vierten Stern repräsentiert.
+                Die Ähren aus Weizen und Reis symbolisieren abermals die Bauern, das Zahnrad die Arbeiterschaft. Ein Hinweis auf die Intelligenz, wie zum Beispiel im Wappen der DDR durch den Zirkel, gibt es im Wappen der Volksrepublik China nicht.</p>
+        </div>
+        
+    </section>
+
+    <!--Fakten-->
+    <section id="fakten" style="width:100%; padding-left: 5%; padding-right:5%; margin: auto;">
+        <h3 id="h3FW"><i>Fakten</i></h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Kategorie</th>
+                <th scope="col">Wert</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Amtssprache</th>
+                <td>Hochchinesisch</td>
+              </tr>
+              <tr>
+                <th scope="row">Hauptstadt</th>
+                <td>Peking (Beijing)</td>
+              </tr>
+              <tr>
+                <th scope="row">Staatsform</th>
+                <td>Einheitsstaat als VR</td>
+              </tr>
+              <tr>
+                <th scope="row">Regierungssystem</th>
+                <td>Einparteiensystem</td>
+              </tr>
+              <tr>
+                <th scope="row">Staatsoberhaupt</th>
+                <td>Xi Jinping</td>
+              </tr>
+              <tr>
+                <th scope="row">Fläche</th>
+                <td>9.596.961 km²</td>
+              </tr>
+              <tr>
+                <th scope="row">Einwohnerzahl</th>
+                <td>1.400.050.000 (2019)</td>
+              </tr>
+              <tr>
+                <th scope="row">Währung</th>
+                <td>Renminbi (CNY)</td>
+              </tr>
+              <tr>
+                <th scope="row">Gründung</th>
+                <td>1. Oktober 1949</td>
+              </tr>
+              <tr>
+                <th scope="row">Nationalhymne</th>
+                <td>Marsch der Freiwilligen</td>
+              </tr>
+              <tr>
+                <th scope="row">Nationalfeiertag</th>
+                <td>1. Oktober (Ausrufung der VR)</td>
+              </tr>
+              <tr>
+                <th scope="row">Zeitzone</th>
+                <td>UTC+8</td>
+              </tr>
+              <tr>
+                <th scope="row">Telefonvorwahl</th>
+                <td>+86</td>
+              </tr>
+            </tbody>
+            </table>
+    </section>
+
+    <section id="geschichte" style="width:100%; padding-left: 5%; padding-right:5%; margin: auto;">
+        <h3 id="h3FW_Gesch"><i>Geschichte</i></h3>
+        <div id="text_geschichte">
+            <p>China hat eine über jahrtausendalte Hochkultur, die ihre Anfänge in der heutigen Provinz Henan unter der Xia-Dynastie (ca. 2000 v Chr.) hat und die ersten Piktogramme auf Orakelknochen (Vorläufer der heutigen chinesischen Schriftzeichen) hervorgebracht hat.
+            Der erste anerkannte Kaiser Chinas war jedoch Qin Shihuangdi, welcher um das Jahr 211 v. Chr die Qin-Dynastie begründete und während seiner Herrschaft monumentale Werke wie das für ihn errichtete Mausoleum mit der weltberühmten Terrakotta Armee in der Nähe von Xi’an in Auftrag geben ließ.
+            Es folgten viele weitere Dynastien und zahlreiche Kriege. Aber auch mehrere Phasen der Blütezeit, aus denen viele bedeutende Erfindungen, Intellektuelle und Künste hervorgegangen sind. Neben Papier, Schießpulver und Porzellan wurde auch der Kompass in China erfunden; und Konfuzius ist nur einer von vielen bekannten und einflussreichen Denkern.
+            Mit dem Sturz des letzten Kaisers Puyi wurde im Jahr 1912 das Kapitel der kaiserlichen Geschichte Chinas geschlossen. Der Kaiserpalast, die Verbotene Stadt in Peking, wurde nun auch der Öffentlichkeit zugänglich gemacht. Heutzutage ist es die meistbesuchte Sehenswürdigkeit des Landes.
+            Das 1949 gegründete neue China unter Mao Zedong orientierte sich zunächst an der Ideologie der Sowjetunion und war durch die Idee der ideologischen Kontrolle des Volkes geprägt. Noch war China dem Westen gegenüber eher feindselig gestimmt. Erst 1972 begann das Land sich wieder etwas dem Westen zu öffnen als der US-Präsident Richard Nixon zu einem offiziellen Staatsbesuch vor Ort war.
+            Mao starb im Jahr 1976, sein Nachfolger Hua Guofeng trat seine Nachfolge an und versuchte das Land zu modernisieren und die alten Thesen Maos zu beseitigen. Nach und nach gab es mehr Freiheiten. Seit 2002 bemühen sich Präsident Hu Jintao und Premierminister Wen Jiabao regionale Ungleichheiten zu bekämpfen.
+            In nur knapp einem Jahrhundert hat sich China seit dem Umsturz des Kaiserhauses, über die Gründung der Republik China bis zur heutigen Volksrepublik China mit der Kommunistische Partei Chinas an der Spitze vom Schwellenland zu einer bedeutenden Volkswirtschaft entwickelt.</p>
+        </div>
+    </section>
+
+    <section id="zukunft" style="width:100%; padding-left: 5%; padding-right:5%; margin: auto;">
+      <h3 id="h3FW"><i>Zukunft</i></h3>
+      <p><img src="Picture/future.jpg" alt="Chinas Zukunft">China ist keine ferne Bedrohung mehr, China ist da! Politisch und wirtschaftlich. Das Reich der Mitte ist ehrgeizig, schnell und gut organisiert, es ist innovativ wie das Silicon Valley und bestimmt zunehmend die internationalen Spielregeln. China setzt auf Wachstum und digitale Technologien und hält sich nicht mit dem westlichen Demokratiemodell auf. Auf allen Kontinenten investiert es in Bodenschätze, Schlüsselindustrien und Infrastruktur. Das 1000-Milliarden-Dollar-Projekt der Neuen Seidenstraße reicht bis Duisburg. An den Aktienmärkten gehören Alibaba und Tencent inzwischen zu den weltweit größten Unternehmen.</p>
+    </section>
+
+    <div id="favicon">
+      <p><i>Icons erstellt von <a id="freepik_link" href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a id="flaticon_link" href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></i></p>
+  </div>
+  <footer>
+          <p><i>Hulong 2020 - Web-Developer</i></p>
+  </footer>
+</body>
+</html>
